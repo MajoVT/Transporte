@@ -1,8 +1,7 @@
-package com.Transporte.entitys;
+package com.transporte.entitys;
 
 
 import jakarta.persistence.*;
-import lombok.Generated;
 
 @Entity
 @Table(name = "coordenadas")
