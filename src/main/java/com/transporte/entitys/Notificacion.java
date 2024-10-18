@@ -1,4 +1,4 @@
-package com.Transporte.entitys;
+package com.transporte.entitys;
 
 import jakarta.persistence.*;
 

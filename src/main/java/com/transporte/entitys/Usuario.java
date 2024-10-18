@@ -1,4 +1,4 @@
-package com.Transporte.entitys;
+package com.transporte.entitys;
 
 
 import jakarta.persistence.*;
@@ -13,7 +13,7 @@ public class Usuario implements Serializable {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "nombre")
     private String nombre;
@@ -36,7 +36,7 @@ public class Usuario implements Serializable {
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String email, int telefono, String contraseña, String ubicacio_actual, String contacto_confianza) {
+    public Usuario(Long id, String nombre, String email, int telefono, String contraseña, String ubicacio_actual, String contacto_confianza) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
@@ -46,11 +46,11 @@ public class Usuario implements Serializable {
         this.contacto_confianza = contacto_confianza;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
